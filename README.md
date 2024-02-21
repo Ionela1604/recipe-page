@@ -19,7 +19,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here]
+- Solution URL: [https://www.frontendmentor.io/solutions/html-and-css-solution-using-tailwind-css-Jz8Twb_r-8)]
 - Live Site URL: [https://ionela1604.github.io/recipe-page/public/]
 
 ## My process
