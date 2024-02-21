@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- BODY COMPONENT ---------- */
+/* Style Body */
+.body-style {
+  @apply bg-eeggshellColor m-0 p-0 font-outfit font-normal text-base;
+}
+
+/* Style hr */
+hr {
+  @apply text-lightGreyColor w-full border-t-2 border-solid mt-7;
+}
+
+/* Style main-card */
+.main-card {
+  @apply bg-whiteColor p-10 rounded-3xl flex flex-col m-20 w-[730px] shadow-md mx-auto;
+}
+
+/* ---------- MAIN CARD COMPONENT ---------- */
+/* Style image-omelette */
+.image-omelette {
+  @apply rounded-lg w-full;
+}
+
+/* Style container */
+.container {
+  @apply p-0 m-0 w-full;
+}
+
+/* Style h1 */
+h1 {
+  @apply font-youngserif font-normal text-[40px] text-darkCharcoalColor mt-7 mb-7;
+}
+
+/* Style p */
+p {
+  @apply text-wengeBrownColor leading-7;
+}
+
+/* ---------- PREPARATION TIME COMPONENT ---------- */
+/* Style section preparation-time */
+.preparation-time {
+  @apply bg-roseWhiteColor rounded-xl my-7 p-6;
+}
+
+/* Style h3 */
+.preparation-time h3 {
+  @apply text-darkRaspberryColor font-bold text-xl;
+}
+
+/* Style ul, ol, li */
+ul {
+  @apply pl-6 list-outside;
+}
+
+ol {
+  @apply mt-0 list-outside pl-6;
+}
+
+li {
+  @apply leading-7 py-1;
+}
+
+/* Style space between bullet and text */
+ul li .bullet {
+  @apply ml-5;
+}
+
+/* Style preparation-time li */
+.preparation-time ul li {
+  @apply text-wengeBrownColor marker:text-darkRaspberryColor;
+}
+
+/* ---------- INGREDIENTS COMPONENT ---------- */
+/* Style h2 */
+h2 {
+  @apply font-youngserif font-normal text-[30px] text-nutmegColor mt-8 mb-5;
+}
+
+/* Style ingredients li */
+.ingredients li {
+  @apply text-wengeBrownColor marker:text-nutmegColor;
+}
+
+/* ---------- INSTRUCTIONS COMPONENT ---------- */
+/* Style instructions li */
+.instructions li {
+  @apply marker:text-nutmegColor marker:font-bold text-wengeBrownColor;
+}
+
+/* Style instructions li - space between bullet and text */
+.instructions li .bullet {
+  @apply ml-5 mr-2;
+}
+
+/* ---------- NUTRITION COMPONENT ---------- */
+.table-nutrition {
+  @apply max-w-screen-md mx-auto;
+}
+
+.row {
+  @apply py-4 h-auto overflow-visible;
+}
+
+.item {
+  @apply text-wengeBrownColor text-base pl-[30px] whitespace-normal;
+}
+
+.value {
+  @apply text-base text-nutmegColor font-bold text-left;
+}
+
+/* ---------- ATRIBUTION COMPONENT ---------- */
+.attribution {
+  @apply text-base mb-4 text-center;
+}
+
+.attribution a {
+  @apply text-[#3e52a3];
+}
+
+/* ---------- MEDIA SCREEN COMPONENT ---------- */
+/* Media screen => @media (max-width: 768px) { ... } */
+.mobile-main-card {
+  @apply mobileMD:p-0 mobileMD:m-0 mobileMD:w-full mobileMD:rounded-none mobileMD:shadow-none;
+}
+
+/* Media screen => @media (max-width: 500px) { ... } */
+.mobile-container {
+  @apply mobileMD:p-7 mobileMD:pb-7 mobileMD:w-full mobileMD:box-border;
+}
+
+/* Media screen => @media (max-width: 768px + 500px) { ... } */
+.mobile-h1 {
+  @apply mobile:leading-tight mobile:text-[30px] mobileMD:mt-2;
+}
+
+/* Media screen => @media (max-width: 768px) { ... } */
+.mobile-img {
+  @apply mobileMD:rounded-none;
+}
+
+/* Media screen => @media (max-width: 768px) { ... } */
+.mobile-attribution {
+  @apply mobileMD:pt-2;
+}

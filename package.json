@@ -1,0 +1,16 @@
+{
+  "name": "recipe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwind build -i src/main.css -o public/css/tailwind.css",
+    "watch": "tailwind build -i src/main.css -o public/css/tailwind.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
